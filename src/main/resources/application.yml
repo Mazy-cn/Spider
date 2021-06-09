@@ -1,0 +1,23 @@
+server.port: 8080
+server.tomcat.uri-encoding: UTF-8
+server.http.encoding.charset: UTF-8
+spring.messages.encoding: UTF-8
+spring.banner.charset: UTF-8
+tomcat:
+  uri-encoding: UTF-8
+  max-threads: 500
+  max-connections: 500
+  connection-timeout: 30000
+  accepCount: 100
+servlet:
+  multipart:
+    max-file-size: 100MB
+    max-request-size: 100MB
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spider
+
+springfox.documentation.swagger.v2.path: /api-docs
